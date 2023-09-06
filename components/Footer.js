@@ -1,11 +1,11 @@
 import { FooterStyles } from "./pre/Footer.styled";
-// import { ContainerStyles } from "./styles/Container.styled";
+import { ContainerStyles } from "./styles/Container.styled";
 import { FlexStyles } from "./pre/Flex.styled";
 
 export default function Footer() {
   return (
     <FooterStyles>
-      <div>
+      <ContainerStyles>
         <FlexStyles>
           <ul>
             <li>
@@ -25,7 +25,7 @@ export default function Footer() {
             <li>Contact Us</li>
           </ul>
         </FlexStyles>
-      </div>
+      </ContainerStyles>
     </FooterStyles>
   )
 }

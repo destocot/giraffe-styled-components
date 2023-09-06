@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { HeaderStyles, NavStyles, ImageStyles } from './pre/Header.styled';
-// import { ContainerStyles } from "./styles/Container.styled";
+import { ContainerStyles } from "./styles/Container.styled";
 import { FlexStyles } from './pre/Flex.styled';
 import { ButtonStyles } from './pre/Button.styled';
 import { FaToggleOn, FaToggleOff } from "react-icons/fa";
@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <HeaderStyles>
-      <div>
+      <ContainerStyles>
         <NavStyles>
           <h1>🦒 Giraffe</h1>
           {
@@ -32,7 +32,7 @@ export default function Header() {
           </div>
           <ImageStyles src="/images/giraffebanner.png" alt="" />
         </FlexStyles>
-      </div>
+      </ContainerStyles>
     </HeaderStyles >
   )
 };
